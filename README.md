@@ -6,12 +6,10 @@ Many approximations were suggested to circumvent the cubic complexity of kernel-
 
 In this paper, we introduce **the Feature Learning (FL) model**, which addresses this issue by **representing tensor-product features as a learnable Canonical Polyadic Decomposition (CPD)**. By leveraging this CPD structure, we efficiently learn the hyperparameters associated with different features alongside the model parameters using an Alternating Least Squares (ALS) optimization method. We prove the effectiveness of the FL model through experiments on real data of various dimensionality and scale. **The results show that the FL model can be consistently trained 3-5 times faster than and have the prediction quality on par with a standard cross-validated model.**
 
-<figure>
-  <img src="images/Dynamics.png" alt="Training time and test MSE plots" width="600">
-  <figcaption>
-    Plots of the training time (first row) and test MSE (second row) of FL and CV models (orange and blue curves respectively) as a function of the number of features \( P \) for different real-life datasets (column-wise). Solid lines represent mean metric calculations and shaded regions depict \( \pm 1 \) standard deviation around the mean across 10 restarts. The proposed FL model requires consistently less time to train compared to the conventional cross-validation. Likewise, the prediction error of the FL model is either similar to CV (shaded regions intersect) or significantly lower (Yacht data), demonstrating the superiority of the FL model.
-  </figcaption>
-</figure>
+| ![Training time and test MSE plots](images/Dynamics.png) |
+|:--:|
+| **Figure 1:** Plots of the training time (first row) and test MSE (second row) of FL and CV models (orange and blue curves respectively) as a function of the number of features \( P \) for different real-life datasets (column-wise). Solid lines represent mean metric calculations and shaded regions depict \( \pm 1 \) standard deviation around the mean across 10 restarts. The proposed FL model requires consistently less time to train compared to the conventional cross-validation. Likewise, the prediction error of the FL model is either similar to CV (shaded regions intersect) or significantly lower (Yacht data), demonstrating the superiority of the FL model. |
+
 
 ## Datasets:
 In this work, we use 5 publicly available UCI regression datasets (Dua and Graff, 2017): *Airfoil, Energy, Yacht, Concrete, Wine.* In order to show and explore the behavior of the FL model on large scale data, we consider the *Airline dataset* (Hensman et al., 2013), contatining recordings of commercial airplane flight delays that occurred in 2008 in the USA.
