@@ -56,3 +56,17 @@ In order to read and run `Jupyter Notebooks` you may follow either of two option
    and follow instructions therein to get the experimental results.
    
    *Alternatively run "experiments.ipynb" in VS Code with "general_env" environment.*
+
+## 📜 Citation
+
+If you find our work helpful, please consider citing the paper:
+
+```bibtex
+@inproceedings{pmlr-v258-saiapin25a,
+  title={Tensor Network Based Feature Learning Model},
+  author={Saiapin, Albert and Batselier, Kim},
+  booktitle={Proceedings of The 28th International Conference on Artificial Intelligence and Statistics},
+  pages={3277-3285},
+  year={2025}
+}
+```
