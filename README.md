@@ -23,7 +23,7 @@ In this work, we use 5 publicly available UCI regression datasets (Dua and Graff
 ## Environment
 We use `conda` package manager to install required python packages. Once `conda is installed`, run the following command (while in the root of the repository):
 ```
-conda env create -f environment/environment.yml
+conda env create -f environment.yml
 ```
 This will create a new environment named `general_env` with all required packages already installed. You can install additional packages by running:
 ```
